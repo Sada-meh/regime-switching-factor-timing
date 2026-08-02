@@ -38,6 +38,54 @@ and **Self-built** (factors reconstructed from CRSP/Compustat).
 
 ---
 
+## Why these four factors
+
+The sleeves are not an arbitrary split. Both rest on one organising question:
+**how dependent is each factor's long leg on the cost of external credit?**
+
+| Factor | Long leg | Short leg | Sleeve | Behaviour when credit is cheap |
+|---|---|---|---|---|
+| SMB | Small caps | Large caps | Cyclical | Outperforms |
+| HML | High book-to-market (value) | Low book-to-market (growth) | Cyclical | Outperforms |
+| RMW | Robust profitability | Weak profitability | Defensive | Underperforms |
+| CMA | Conservative investment | Aggressive investment | Defensive | Underperforms |
+
+**Cyclical sleeve — SMB and HML.** Small firms borrow on worse terms than large
+ones: they are more opaque, post less collateral and face steeper risk premia.
+When credit is cheap or easing, that penalty shrinks and the small-cap leg
+rallies. Value firms are credit-sensitive for a related reason. High
+book-to-market is, in practice, a screen for firms that are leveraged,
+low-margin or partway through distress — precisely the balance sheets that
+benefit most when refinancing gets easier. This is the distress-risk reading of
+HML that Fama and French (1993) originally advanced, and it makes both factors
+long the part of the market that does best when money is loose.
+
+**Defensive sleeve — RMW and CMA.** These load on firms that do not need the
+credit market. Robustly profitable companies fund themselves from operating cash
+flow, so when borrowing costs rise and refinancing becomes hard, their advantage
+over weak-profitability peers widens. Conservative investors face the same
+asymmetry from the other side: firms committing heavily to capital expenditure
+must fund it externally, and expensive credit turns aggressive investment from a
+growth signal into a liability. Investors reward balance-sheet caution exactly
+when caution is scarce. Fama and French (2015) added both factors to capture
+this profitability–investment dimension.
+
+**The resulting spread.** The model does not trade the four factors separately.
+It forms one series — the cyclical sleeve minus the defensive sleeve:
+
+```
+cyclical  = 0.5 * (SMB + HML)
+defensive = 0.5 * (RMW + CMA)
+spread    = cyclical - defensive
+```
+
+If credit conditions really do drive the rotation, this spread should be high in
+easy-credit states and low in tight ones — persistently enough for a two-state
+Markov model to recover the switch. Testing that claim is the point of this
+repository; §Results reports what was actually found.
+
+---
+
 ## Results
 
 ### Markov model (reproducible from the included public data)
@@ -110,13 +158,12 @@ cd trial-and-error/Markov && python markov_factor_timing.py
 This writes model diagnostics, filtered-probability plots, a recursive
 backtest, robustness tables and the final decision file into that directory.
 
----
 
-## Data and licensing
+
+## Data 
 
 The public inputs (Fama-French factors, FRED series) are committed. The
-CRSP, Compustat and LSEG/Refinitiv extracts are **subscription-licensed and
-deliberately excluded** — they cannot be redistributed.
+CRSP, Compustat and LSEG/Refinitiv extracts cannot be redistributed.
 
 `Data/README.md` documents exactly which files are missing, which vendor
 table each comes from, and the fields needed to rebuild them from your own
@@ -125,21 +172,3 @@ institutional access. Loaders that need a missing file raise a clear
 
 The Markov model depends only on public data and runs without any of this.
 
----
-
-## Caveats
-
-- Single market (US), single sample period; no cross-country validation.
-- The two-state Markov specification failed its own stability checks —
-  state assignments move under re-estimation. Treat the regime labels as
-  fragile.
-- Self-built factor versions have short effective samples (15-226 months
-  after burn-in) and their point estimates are not reliable.
-- These are backtests. Nothing here is investment advice.
-
-## Authors
-
-Group 17 — Meher Paryani, Cillian, Beau.
-
-Code released under the MIT Licence (see `LICENSE`). The licence covers the
-code only, not any third-party data.
