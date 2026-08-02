@@ -1,0 +1,7 @@
+var_1,var_2,abs_corr,action
+z_cyclical_3m,z_spread_3m,0.7459730457208062,review overlap
+z_VIX,z_DEF,0.6702652609626443,review overlap
+z_cyclical_3m,,,overlaps with z_spread_3m and is less directly tied to relative sleeve rotation
+z_defensive_3m,,,overlaps with z_spread_3m and is less directly tied to relative sleeve rotation
+z_spread_12m,,,overlaps with z_spread_3m; longer horizon is useful only as optional context
+z_EPU,,,stress / uncertainty proxy overlaps with z_VIX and z_DEF and has publication-lag concerns

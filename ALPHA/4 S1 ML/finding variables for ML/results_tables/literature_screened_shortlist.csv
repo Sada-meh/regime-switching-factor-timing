@@ -1,0 +1,15 @@
+variable_name,definition,economic_mechanism,literature_bucket
+z_TERM,Expanding z-score of TERM slope,growth expectations,core
+z_DEF,Expanding z-score of DEF spread,credit conditions,core
+z_dTERM,Expanding z-score of monthly change in TERM,policy / rates regime,core
+z_dDEF,Expanding z-score of monthly change in DEF,funding stress,core
+z_VIX,Expanding z-score of VIX level,risk aversion / market stress,core
+z_EPU,Expanding z-score of economic policy uncertainty,policy / rates regime,optional
+z_mkt_rf_3m,Expanding z-score of trailing 3M market excess return,factor momentum / factor state,core
+z_spread_3m,Expanding z-score of trailing 3M cyclical-minus-defensive spread,factor momentum / factor state,core
+z_spread_12m,Expanding z-score of trailing 12M cyclical-minus-defensive spread,factor momentum / factor state,optional
+z_spread_vol_12m,Expanding z-score of trailing 12M spread volatility,factor state / instability,core
+z_cyclical_3m,Expanding z-score of trailing 3M cyclical sleeve return,factor momentum / factor state,optional
+z_defensive_3m,Expanding z-score of trailing 3M defensive sleeve return,factor momentum / factor state,optional
+IP_growth_12m,12M industrial production growth,growth expectations,drop
+factor_valuation_spread,Relative valuation of cyclical vs defensive factors,factor valuation or spread conditions,drop

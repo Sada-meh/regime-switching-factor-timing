@@ -1,0 +1,11 @@
+metric,value
+agreement_rate_with_main_classifier,0.5088
+mean_prob_good,0.3314
+share_good_predictions,0.1979
+share_bad_predictions,0.8021
+annual_mean_return,0.0078
+annual_volatility,0.1643
+annual_sharpe,0.0474
+ff5_alpha,0.0004
+ff5_alpha_t,0.1742
+ff5_alpha_p,0.8617

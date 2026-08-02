@@ -1,0 +1,30 @@
+# ---------------------------------------------------------------
+# Licensed data - MUST NOT be committed.
+# CRSP, Compustat and LSEG/Refinitiv extracts are subscription
+# data and may not be redistributed. See Data/README.md.
+# ---------------------------------------------------------------
+Data/crsp_*.csv
+Data/QMJ_data.csv
+Data/*Table Data*.csv
+Data/not needed/
+*.dta
+*.sas7bdat
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# LaTeX / build noise
+*.aux
+*.log
+*.out

@@ -1,0 +1,2 @@
+gross_sharpe,net_sharpe_25bps,net_sharpe_50bps,mean_ann_return,vol_ann,ff5_alpha_ann,ff5_alpha_t,max_drawdown,turnover,lambda_extreme_share,lambda_low_share,lambda_high_share,weight_instability,avg_abs_delta_weight,max_abs_weight,clip_rate,live_months
+-0.31110568997627697,-0.3117129315011026,-0.31232028805504664,-0.03255906749087198,0.10465596914461685,-0.03613115966982558,-0.4123722391648164,-0.08306990390507829,0.0019916983779443174,0.5,0.5,0.0,0.0019916983779443174,0.0007113208492658277,0.34484228812250445,0.0,15

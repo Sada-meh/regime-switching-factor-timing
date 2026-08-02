@@ -1,0 +1,4 @@
+series,capm_alpha,ff3_alpha,ff5_alpha,capm_alpha_t,ff3_alpha_t,ff5_alpha_t,capm_alpha_p,ff3_alpha_p,ff5_alpha_p,capm_r_squared,ff3_r_squared,ff5_r_squared
+Cash,0.0,0.0,0.0,,,,,,,,,
+Static_RMW_CMA,0.0022,0.0013,-0.002,1.9386,1.7063,-8.8586,0.0526,0.0879,0.0,0.1666,0.5563,0.9918
+Timed_RMW_CMA_Cash,0.0007,0.0005,-0.0003,1.1318,0.7917,-0.6271,0.2577,0.4285,0.5306,0.0044,0.1971,0.2961

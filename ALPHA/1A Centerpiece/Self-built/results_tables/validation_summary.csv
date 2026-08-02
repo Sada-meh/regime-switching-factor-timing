@@ -1,0 +1,9 @@
+check,expected,actual
+Total months,417,417
+Date range,1990-01 to 2024-09,1990-01 to 2024-09
+NaN count,0,0
+Mean Mkt-RF,~0.007,0.0073
+Mean TERM,~1.5,1.5519
+Mean DEF,~1.0,0.9493
+DEF always positive,Yes,True
+"Correlation(TERM, DEF)",Slightly negative,0.1772

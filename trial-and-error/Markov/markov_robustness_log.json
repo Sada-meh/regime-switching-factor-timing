@@ -1,0 +1,151 @@
+[
+  {
+    "check": "threshold_robustness",
+    "status": "pass",
+    "details": [
+      {
+        "series": "Threshold_55_45",
+        "sharpe_annual": 0.5586
+      },
+      {
+        "series": "Threshold_60_40",
+        "sharpe_annual": 0.5462
+      },
+      {
+        "series": "Threshold_65_35",
+        "sharpe_annual": 0.5535
+      }
+    ]
+  },
+  {
+    "check": "sleeve_definition_volscaled",
+    "status": "pass",
+    "details": [
+      {
+        "series": "VolScaled_Sleeves",
+        "n_months": 357,
+        "mean_annual": 0.0378,
+        "vol_annual": 0.063,
+        "sharpe_annual": 0.6002,
+        "max_drawdown": -0.188,
+        "avg_monthly_turnover": NaN,
+        "ff5_alpha": -0.0012,
+        "ff5_alpha_t": -2.5279,
+        "ff5_alpha_p": 0.0115,
+        "ff5_r_squared": 0.8732
+      }
+    ]
+  },
+  {
+    "check": "lag_robustness",
+    "status": "pass",
+    "details": "lag extension not warranted by diagnostics"
+  },
+  {
+    "check": "three_state_diagnostic",
+    "status": "pass",
+    "details": "diagnostic only"
+  },
+  {
+    "check": "switching_variance",
+    "status": "pass",
+    "details": "diagnostic only"
+  },
+  {
+    "check": "sample_split",
+    "status": "pass",
+    "details": [
+      {
+        "series": "strategy_gross",
+        "n_months": 156,
+        "mean_annual": 0.0485,
+        "vol_annual": 0.0802,
+        "sharpe_annual": 0.6047,
+        "max_drawdown": -0.1687,
+        "avg_monthly_turnover": NaN,
+        "ff5_alpha": -0.0017,
+        "ff5_alpha_t": -1.796,
+        "ff5_alpha_p": 0.0725,
+        "ff5_r_squared": 0.7969,
+        "period": "pre_2008"
+      },
+      {
+        "series": "strategy_gross",
+        "n_months": 201,
+        "mean_annual": 0.0259,
+        "vol_annual": 0.0513,
+        "sharpe_annual": 0.5048,
+        "max_drawdown": -0.1018,
+        "avg_monthly_turnover": NaN,
+        "ff5_alpha": -0.0009,
+        "ff5_alpha_t": -3.7991,
+        "ff5_alpha_p": 0.0001,
+        "ff5_r_squared": 0.9923,
+        "period": "post_2007"
+      }
+    ]
+  },
+  {
+    "check": "benchmark_robustness",
+    "status": "pass",
+    "details": [
+      {
+        "series": "strategy_gross",
+        "sharpe_annual": 0.5462
+      },
+      {
+        "series": "benchmark_equal_sleeves",
+        "sharpe_annual": 0.3941
+      },
+      {
+        "series": "benchmark_cyclical_only",
+        "sharpe_annual": 0.153
+      },
+      {
+        "series": "benchmark_defensive_only",
+        "sharpe_annual": 0.4911
+      },
+      {
+        "series": "benchmark_all_factor_equal",
+        "sharpe_annual": 0.3941
+      }
+    ]
+  },
+  {
+    "check": "probability_source_revision",
+    "status": "pass",
+    "details": {
+      "avg_abs_gap": 0.0
+    }
+  },
+  {
+    "check": "reestimation_robustness",
+    "status": "fail",
+    "details": [
+      {
+        "seed": 11,
+        "converged": false,
+        "llf": NaN,
+        "cyclical_mean": NaN,
+        "defensive_mean": NaN,
+        "mean_gap": NaN
+      },
+      {
+        "seed": 22,
+        "converged": true,
+        "llf": 928.6158,
+        "cyclical_mean": -0.0017,
+        "defensive_mean": -0.0017,
+        "mean_gap": 0.0
+      },
+      {
+        "seed": 33,
+        "converged": false,
+        "llf": NaN,
+        "cyclical_mean": NaN,
+        "defensive_mean": NaN,
+        "mean_gap": NaN
+      }
+    ]
+  }
+]

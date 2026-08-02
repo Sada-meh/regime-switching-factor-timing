@@ -1,0 +1,3 @@
+rebalance_date,selected_lambda,validation_score,n_validation_folds,validation_metric,validation_aggregation
+2023-07-31,3,1.572383632729083,1,gross_sharpe,single
+2024-07-31,1,0.7370479036950911,1,gross_sharpe,single

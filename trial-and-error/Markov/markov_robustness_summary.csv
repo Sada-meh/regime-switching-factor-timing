@@ -1,0 +1,10 @@
+check,status,details
+threshold_robustness,pass,"[{'series': 'Threshold_55_45', 'sharpe_annual': 0.5586}, {'series': 'Threshold_60_40', 'sharpe_annual': 0.5462}, {'series': 'Threshold_65_35', 'sharpe_annual': 0.5535}]"
+sleeve_definition_volscaled,pass,"[{'series': 'VolScaled_Sleeves', 'n_months': 357, 'mean_annual': 0.0378, 'vol_annual': 0.063, 'sharpe_annual': 0.6002, 'max_drawdown': -0.188, 'avg_monthly_turnover': nan, 'ff5_alpha': -0.0012, 'ff5_alpha_t': -2.5279, 'ff5_alpha_p': 0.0115, 'ff5_r_squared': 0.8732}]"
+lag_robustness,pass,lag extension not warranted by diagnostics
+three_state_diagnostic,pass,diagnostic only
+switching_variance,pass,diagnostic only
+sample_split,pass,"[{'series': 'strategy_gross', 'n_months': 156, 'mean_annual': 0.0485, 'vol_annual': 0.0802, 'sharpe_annual': 0.6047, 'max_drawdown': -0.1687, 'avg_monthly_turnover': nan, 'ff5_alpha': -0.0017, 'ff5_alpha_t': -1.796, 'ff5_alpha_p': 0.0725, 'ff5_r_squared': 0.7969, 'period': 'pre_2008'}, {'series': 'strategy_gross', 'n_months': 201, 'mean_annual': 0.0259, 'vol_annual': 0.0513, 'sharpe_annual': 0.5048, 'max_drawdown': -0.1018, 'avg_monthly_turnover': nan, 'ff5_alpha': -0.0009, 'ff5_alpha_t': -3.7991, 'ff5_alpha_p': 0.0001, 'ff5_r_squared': 0.9923, 'period': 'post_2007'}]"
+benchmark_robustness,pass,"[{'series': 'strategy_gross', 'sharpe_annual': 0.5462}, {'series': 'benchmark_equal_sleeves', 'sharpe_annual': 0.3941}, {'series': 'benchmark_cyclical_only', 'sharpe_annual': 0.153}, {'series': 'benchmark_defensive_only', 'sharpe_annual': 0.4911}, {'series': 'benchmark_all_factor_equal', 'sharpe_annual': 0.3941}]"
+probability_source_revision,pass,{'avg_abs_gap': 0.0}
+reestimation_robustness,fail,"[{'seed': 11, 'converged': False, 'llf': nan, 'cyclical_mean': nan, 'defensive_mean': nan, 'mean_gap': nan}, {'seed': 22, 'converged': True, 'llf': 928.6158, 'cyclical_mean': -0.0017, 'defensive_mean': -0.0017, 'mean_gap': 0.0}, {'seed': 33, 'converged': False, 'llf': nan, 'cyclical_mean': nan, 'defensive_mean': nan, 'mean_gap': nan}]"

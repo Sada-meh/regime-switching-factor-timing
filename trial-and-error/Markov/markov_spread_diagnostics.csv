@@ -1,0 +1,15 @@
+metric,value
+mean_monthly,-0.0016718225419664267
+std_monthly,0.026130961383466208
+lag1_autocorrelation,0.0750662404660363
+ar1_beta,0.07510101039657063
+ar1_pvalue,0.12636180516673762
+ljungbox_stat_lag_1,2.364494569712228
+ljungbox_pvalue_lag_1,0.12412410902867807
+ljungbox_stat_lag_3,4.9195829545325624
+ljungbox_pvalue_lag_3,0.17778127570285585
+ljungbox_stat_lag_6,10.070042923978008
+ljungbox_pvalue_lag_6,0.12173318185140049
+ljungbox_stat_lag_12,13.57000543400339
+ljungbox_pvalue_lag_12,0.32900497151456953
+meaningful_serial_dependence,False

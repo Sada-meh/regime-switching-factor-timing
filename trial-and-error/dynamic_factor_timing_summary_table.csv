@@ -1,0 +1,4 @@
+series,n_months,mean_annual,vol_annual,sharpe_annual,t_stat,p_value,max_drawdown,turnover_mean_monthly,ff5_alpha,ff5_alpha_t,ff5_alpha_p,ff5_r_squared
+Binary_Strategy,187,-0.034,0.1448,-0.2346,-0.9261,0.3556,-0.5525,0.0,-0.0017,-0.6272,0.5305,0.1744
+Dynamic_Timing,187,-0.0525,0.1664,-0.3157,-1.2462,0.2143,-0.6572,0.0,-0.0019,-0.5574,0.5772,0.1415
+Equal_Weight,187,-0.013,0.1393,-0.0936,-0.3697,0.7121,-0.4888,0.0,0.001,0.4205,0.6741,0.3362

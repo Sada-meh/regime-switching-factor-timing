@@ -1,0 +1,4 @@
+seed,converged,llf,cyclical_mean,defensive_mean,mean_gap
+11,False,,,,
+22,True,928.6157801872046,-0.0016718211290038566,-0.0016718235867102112,2.4577063546197403e-09
+33,False,,,,

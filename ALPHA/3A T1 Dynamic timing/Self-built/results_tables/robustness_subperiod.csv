@@ -1,0 +1,3 @@
+strategy,period,sharpe,ff5_alpha,ff5_alpha_t
+strategy_3A_T1,pre_2008,,,
+strategy_3A_T1,post_2007,-0.2975084827036381,-0.002055557780473967,-0.25839768119271167

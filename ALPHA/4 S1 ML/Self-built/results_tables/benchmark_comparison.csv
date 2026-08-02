@@ -1,0 +1,2 @@
+sample_ok,oos_months,feature_count,accuracy,majority_accuracy,balanced_accuracy,majority_balanced_accuracy,brier_score,majority_brier_score,strategy_sharpe,static_basket_sharpe,bad_only_sharpe,delta_sharpe_vs_static,delta_sharpe_vs_bad_only,delta_mean_ann_vs_static,delta_mean_ann_vs_bad_only
+False,11,5,0.6363636363636364,0.36363636363636365,0.6071428571428572,0.2857142857142857,0.24855857585754926,0.252589980317398,-0.0840930744603608,-0.7679322773582485,-0.23755546403829222,0.6838392028978877,0.15346238957793143,0.06256625195546972,0.012541066484708051

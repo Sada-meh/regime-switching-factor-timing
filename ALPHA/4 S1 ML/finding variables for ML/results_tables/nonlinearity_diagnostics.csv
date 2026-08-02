@@ -1,0 +1,13 @@
+variable_name,nonlinearity_class,monotonic,extreme_gap
+z_mkt_rf_3m,approximately linear,True,0.0056014492753623185
+z_TERM,nonlinear but useful,False,0.004320279428631008
+z_dDEF,approximately linear,True,-0.005720652173913043
+z_EPU,nonlinear but useful,False,0.003547122302158274
+z_dTERM,nonlinear but useful,False,0.0022253623188405796
+z_spread_3m,approximately linear,True,0.0031789855072463765
+z_spread_vol_12m,noisy / patternless,False,0.0015325925925925926
+z_cyclical_3m,noisy / patternless,False,-0.0014565217391304347
+z_DEF,approximately linear,True,0.0022159159628818686
+z_spread_12m,noisy / patternless,False,9.259259259259328e-05
+z_defensive_3m,approximately linear,True,-0.006328985507246376
+z_VIX,noisy / patternless,False,-5.6628610155353814e-05

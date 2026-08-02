@@ -1,0 +1,9 @@
+check,flag,details
+convergence_warnings,False,none
+nearly_identical_regime_means,False,mean_gap=0.1455
+low_regime_persistence,True,"durations=[1.0, 413.77]"
+rare_regime,True,"shares=[0.002, 0.998]"
+probabilities_oscillate_excessively,False,high_turnover_share=0.025
+reestimation_instability,True,llf_std=nan
+threshold_fragility,False,"sharpes=[{'series': 'Threshold_55_45', 'sharpe_annual': 0.5586030109688183}, {'series': 'Threshold_60_40', 'sharpe_annual': 0.5462093416165728}, {'series': 'Threshold_65_35', 'sharpe_annual': 0.5535174915105374}]"
+cost_fragility_50bps,False,"sharpe_0bps=0.546, sharpe_50bps=0.471"

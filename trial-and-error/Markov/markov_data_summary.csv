@@ -1,0 +1,13 @@
+metric,value
+sample_start,1990-01-31
+sample_end,2024-09-30
+n_months,417
+duplicate_dates,0
+strictly_increasing_dates,True
+rows_dropped_for_missing_required,0
+missing_SMB,0
+missing_HML,0
+missing_RMW,0
+missing_CMA,0
+missing_RF,0
+missing_Mkt-RF,0

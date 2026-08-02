@@ -1,0 +1,4 @@
+series,n_months,mean_annual,vol_annual,sharpe_annual,t_stat,p_value,max_drawdown,turnover_mean_monthly,ff5_alpha,ff5_alpha_t,ff5_alpha_p,ff5_r_squared
+Cash,391,0.0238,0.0061,3.9302,22.4341,0.0,0.0,0.0,0.0,,,
+Static_RMW_CMA,391,0.0342,0.0662,0.5168,2.9499,0.0034,-0.2763,0.0,-0.002,-8.8586,0.0,0.9918
+Timed_RMW_CMA_Cash,391,0.0311,0.0332,0.9373,5.3501,0.0,-0.1076,0.0,-0.0003,-0.6271,0.5306,0.2961

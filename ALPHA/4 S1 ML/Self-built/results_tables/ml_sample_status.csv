@@ -1,0 +1,2 @@
+version,feature_count,features,usable_months,min_train_months,oos_months,min_required_oos_months,sample_ok
+Self-built,5,"z_mkt_rf_3m, z_TERM, z_dDEF, z_dTERM, z_spread_3m",131,120,11,60,False

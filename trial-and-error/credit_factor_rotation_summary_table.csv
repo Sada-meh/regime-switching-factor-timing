@@ -1,0 +1,5 @@
+series,n_months,mean_annual,vol_annual,sharpe_annual,t_stat,p_value,max_drawdown,turnover_mean_monthly,ff5_alpha,ff5_alpha_t,ff5_alpha_p,ff5_r_squared
+Ken French RMW+CMA,285,0.0328,0.058,0.5658,2.7575,0.0062,-0.1018,0.0,-0.0013,-5.9094,0.0,0.9922
+Main Strategy,285,-0.0239,0.1846,-0.1295,-0.6309,0.5286,-0.7582,0.0982,-0.0033,-1.2536,0.21,0.115
+QMJ Benchmark,282,0.0354,0.1122,0.315,1.527,0.1279,-0.306,0.0,0.0016,1.0282,0.3039,0.3359
+Static Equal-Weight Basket,285,-0.0234,0.1824,-0.1285,-0.6264,0.5315,-0.7442,0.0,-0.0037,-1.3964,0.1626,0.2099
